@@ -8,7 +8,7 @@ function clearCells() {
   var myRange = activeSheet.getRange("A1:H12");
   
   myRange.clear();
-  myRange.clearContent();
-  myRange.clearFormat();
+//  myRange.clearContent();
+//  myRange.clearFormat();
 
 }
