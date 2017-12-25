@@ -1,5 +1,4 @@
 function makeMatrices() {
-  
   /*
   The hierarchy of objects is as follows:
   Application
@@ -7,6 +6,7 @@ function makeMatrices() {
   Sheet
   Range/Cells
   */
+  
   var app = SpreadsheetApp;
   var ss = app.getActiveSpreadsheet();
   var activeSheet = ss.getActiveSheet();
