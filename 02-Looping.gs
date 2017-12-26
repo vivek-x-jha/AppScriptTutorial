@@ -10,7 +10,7 @@ function blastoff() {
   
   activeSheet.getRange("A1").setValue("Begin countdown:");
   
-  for(var i=10;i>0;i--) {
+  for(var i=10; i>0; i--) {
    
     var count = activeSheet.getRange(12 - i, 1).setValue(i);
     Logger.log(i)
