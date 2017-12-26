@@ -1,5 +1,5 @@
 /**
-* Prints out Hello World
+* Prints out Hello World.
 *
 * @customfunction
 */
@@ -13,16 +13,17 @@ function HELLOWORLD() {
 }
 
 /**
-* Checks if two numbers are equal
+* Raises a base to a power.
 *
-* @param num1 First number
-* @param num2 Second number 
+* @param {2} num1    base
+* @param {3} num2    exponent
+* @returns {Number}  base raised to exponent
 * @customfunction
 */
 
-function MULTIPLY(num1, num2) {
+function BASEPOWER(num1, num2) {
   
-  var result = num1 * num2;
+  var result = Math.pow(num1, num2);
   
   return result;
 
