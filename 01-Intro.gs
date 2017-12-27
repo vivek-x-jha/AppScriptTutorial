@@ -19,7 +19,7 @@ function makeMatrices() {
   activeSheet.getRange(1, 6, 3, 3).setValue(0);
   
   // We can also use getValue() to store spreadsheet data into variables
-  var zero = activeSheet.getRange(1, 6, 3, 3).getValue();
+  var zero = activeSheet.getRange(1, 2).getValue();
   
   activeSheet.getRange(5, 1).setValue("Below is the 2x2 Identity Matrix");
   activeSheet.getRange(6, 1).setValue(zero + 1);
