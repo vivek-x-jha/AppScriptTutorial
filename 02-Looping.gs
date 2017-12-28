@@ -1,22 +1,20 @@
 function blastoff() {  
   /*
-  Uses forloop to countdown and blast off!
+  Uses forloop to countdown from 10 and blast off!
   Also logs values used to countdown
   */
   
-  var app = SpreadsheetApp;
-  var ss = app.getActiveSpreadsheet();
-  var activeSheet = ss.getActiveSheet();
+  var ss = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
   
-  activeSheet.getRange("A1").setValue("Begin countdown:");
+  ss.getRange('A1').setValue('Begin countdown:');
   
-  for(var i=10; i>0; i--) {
+  for (var i = 10; i > 0; i--) {
    
-    var count = activeSheet.getRange(12 - i, 1).setValue(i);
+    var count = ss.getRange(12 - i, 1).setValue(i);
     Logger.log(i)
     
   }
   
-  activeSheet.getRange(12, 1).setValue("Blast Off!");
+  ss.getRange(12, 1).setValue('Blast Off!');
   
 }
